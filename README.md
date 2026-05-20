@@ -35,19 +35,21 @@ console.log(isStrongPassword('Hello World'));   // false
 
 ### `generateStrongPassword(length?)`
 
-Generates a random password using uppercase letters, lowercase letters, digits, and special characters (`!@#$%^&*()_+`).
+Generates a random password using uppercase letters, lowercase letters, digits, and special characters (`!@#$%^&*()_+`). Guaranteed to always return a password that passes `isStrongPassword`.
 
-| Parameter | Type   | Default | Description                 |
-|-----------|--------|---------|-----------------------------|
-| `length`  | number | `12`    | The desired password length |
+| Parameter | Type   | Default | Description                                  |
+|-----------|--------|---------|----------------------------------------------|
+| `length`  | number | `12`    | The desired password length (minimum: **8**) |
 
 **Returns:** `string`
 
+**Throws:** `Error` if `length` is less than 8.
+
 **Examples:**
 ```javascript
-generateStrongPassword(1);   // e.g., "W"
 generateStrongPassword(12);  // e.g., "pC%mD8TpCKn2"
 generateStrongPassword();    // e.g., "xK@9mLqR2#Tz"
+generateStrongPassword(1);   // throws Error: Password length must be at least 8 to be strong
 ```
 
 ### `isStrongPassword(password)`

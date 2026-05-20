@@ -1,6 +1,6 @@
 {
   "name": "@abdel-sa/password-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library providing password utility functions including strong password generation and validation",
   "main": "src/index.js",
   "scripts": {
