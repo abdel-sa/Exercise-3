@@ -1,0 +1,21 @@
+{
+  "name": "@abdel-sa/password-utilities",
+  "version": "1.0.0",
+  "description": "A JavaScript library providing password utility functions including strong password generation and validation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "password",
+    "security",
+    "utilities",
+    "validation",
+    "generator"
+  ],
+  "author": "Abdelrahman Salama",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
